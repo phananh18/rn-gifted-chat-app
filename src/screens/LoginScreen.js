@@ -40,6 +40,8 @@ const LoginScreen = ({ navigation }) => {
                 placeholder='Enter your password'
                 leftIcon={{ type: 'material', name: 'lock' }}
                 secureTextEntry
+                value={password}
+                onChangeText={text=>setPassword(text)}
             />
 
             <Button title='Signin' onPress={signIn} />

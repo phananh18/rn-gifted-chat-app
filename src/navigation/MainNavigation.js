@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 
 function MyStack() {
     return(
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='Login'>
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Chat' component={ChatScreen} />
